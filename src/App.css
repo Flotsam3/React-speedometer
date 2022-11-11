@@ -19,6 +19,12 @@ body {
   background-color: white;
 }
 
+.car > div {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
 .buttonWrapper {
   display: flex;
   gap: 5px;

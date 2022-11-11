@@ -18,3 +18,24 @@ body {
 .car {
   background-color: white;
 }
+
+.buttonWrapper {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+}
+
+.buttonWrapper button {
+  flex-grow: 1;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.buttonWrapper button:hover {
+  background-color: #444;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}

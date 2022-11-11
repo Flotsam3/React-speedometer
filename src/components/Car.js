@@ -41,8 +41,6 @@ const reduce = (state, action) => {
 export default function Car() {
   const [state, dispatch] = useReducer(reduce, {motor: "off", speed: 0})
   
-  console.log(state);
-
   return <div className="car">
     {state.motor === "on" ? <ReactSpeedometer startColor="green" endColor="red" value={state.speed} currentValueText={state.speed + "km/h"} maxValue={280} customSegmentStops={[0, 50, 100, 130, 180, 230, 280]}/>: <h2>Ausgeschaltet</h2>}
     

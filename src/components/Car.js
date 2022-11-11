@@ -10,12 +10,12 @@ const reduce = (state, action) => {
         }
         return {...state, motor: "off", speed: 0}
       case "accelerate":
-        if (state.motor === "on" && state.speed <= 280){
+        if (state.motor === "on" && state.speed < 280){
           return {...state, speed: state.speed + 5}
         }
         return state
       case "brake":
-        if (state.motor === "on" && state.speed >= 5){
+        if (state.motor === "on" && state.speed > 0){
           return {...state, speed: state.speed - 5}
         }
         return state
